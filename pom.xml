@@ -37,9 +37,9 @@
         </repository>
     </repositories>
     <scm>
-        <url>https://github.com/wso2/maven-tools.git</url>
-        <developerConnection>scm:git:https://github.com/wso2/maven-tools.git</developerConnection>
-        <connection>scm:git:https://github.com/wso2/maven-tools.git</connection>
+        <url>https://github.com/wso2/maven-tooling-analytics.git</url>
+        <developerConnection>scm:git:https://github.com/wso2/maven-tooling-analytics.git</developerConnection>
+        <connection>scm:git:https://github.com/wso2/maven-tooling-analytics.git</connection>
         <tag>HEAD</tag>
     </scm>
     <modules>
