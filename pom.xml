@@ -20,7 +20,7 @@
     <groupId>org.wso2.maven</groupId>
     <artifactId>maven-analytics-tools</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>Analytics Maven Tool Aggregator Pom</name>
     <url>http://wso2.org</url>
     <repositories>
@@ -39,7 +39,7 @@
         <url>https://github.com/wso2/maven-tooling-analytics.git</url>
         <developerConnection>scm:git:https://github.com/wso2/maven-tooling-analytics.git</developerConnection>
         <connection>scm:git:https://github.com/wso2/maven-tooling-analytics.git</connection>
-        <tag>v1.0.0</tag>
+        <tag>HEAD</tag>
     </scm>
     <modules>
         <module>org.wso2.maven.analytics</module>
