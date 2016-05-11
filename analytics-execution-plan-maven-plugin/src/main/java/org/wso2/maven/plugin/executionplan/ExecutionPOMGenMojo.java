@@ -23,8 +23,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Properties;
-import java.util.StringTokenizer;
 
 import org.apache.maven.model.Plugin;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -34,12 +32,12 @@ import org.apache.maven.project.MavenProjectHelper;
 import org.codehaus.plexus.util.FileUtils;
 import org.codehaus.plexus.util.xml.Xpp3Dom;
 import org.wso2.developerstudio.eclipse.utils.data.ITemporaryFileTag;
+import org.wso2.maven.analytics.utils.WSO2MavenAnalyticsPluginConstants;
 import org.wso2.maven.capp.model.Artifact;
 import org.wso2.maven.capp.mojo.AbstractPOMGenMojo;
 import org.wso2.maven.capp.utils.CAppMavenUtils;
 import org.wso2.maven.analytics.AnalyticsArtifact;
 import org.wso2.maven.analytics.utils.AnalyticsMavenUtils;
-import org.wso2.maven.analytics.utils.WSO2MavenAnalyticsPluginConstantants;
 
 /**
  * This is the Maven Mojo used for generating a pom for a executionplan artifact 
@@ -138,7 +136,7 @@ public class ExecutionPOMGenMojo extends AbstractPOMGenMojo {
 		newTag.clearAndEnd();
 	}
 	protected void addPlugins(MavenProject artifactMavenProject, Artifact artifact) {
-		Plugin plugin = CAppMavenUtils.createPluginEntry(artifactMavenProject,"org.wso2.maven","analytics-execution-plan-maven-plugin",WSO2MavenAnalyticsPluginConstantants.MAVEN_ANALYTICS_PLUGIN_VERSION,true);
+		Plugin plugin = CAppMavenUtils.createPluginEntry(artifactMavenProject,"org.wso2.maven","analytics-execution-plan-maven-plugin", WSO2MavenAnalyticsPluginConstants.MAVEN_ANALYTICS_PLUGIN_VERSION,true);
 		Xpp3Dom configuration = (Xpp3Dom)plugin.getConfiguration();
 		//add configuration
 		Xpp3Dom aritfact = CAppMavenUtils.createConfigurationNode(configuration,"artifact");
