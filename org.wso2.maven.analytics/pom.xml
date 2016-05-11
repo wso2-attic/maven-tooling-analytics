@@ -20,7 +20,7 @@
 	<artifactId>org.wso2.maven.analytics</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>CApp Maven</name>
+	<name>CApp Maven - Analytics</name>
 	<description>Library to work with CApp artifacts</description>
 	<build>
 		<extensions>
